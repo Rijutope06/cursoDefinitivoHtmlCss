@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+  <h2>Calendario</h2>
+  <form action="">
+    <label for="nombre">
+      <span>¿Cúal es tu nombre?</span>
+      <input type="text" name="nombre" id="nombre" autocomplete="name" required>
+    </label>
+    <br>
+    <label for="correo">
+      <span>Correo</span>
+      <input type="email" name="correo" id="correo" autocomplete="email" required>
+    </label>
+    <br>
+    <label for="cursosList">
+      <span>¿En que país vives?</span>
+      <input list="cursos" id="cursosList">
+        <datalist id="cursos">
+          <option value="JAVASCRIPT"></option>
+          <option value="HTML5"></option>
+          <option value="CSS3"></option>
+          <option value="Web Standard"></option>
+        </datalist>
+    </label>
+    <br>
+    <label for="cp">
+      <span>¿Cual es tú código postal?</span>
+      <input type="number" name="cp" id="cp" autocomplete="postal-code" required>
+    </label>
+    <br>
+    <input type="submit" value="Nombre">
+    <button type="submit">Button <span>😀</span></button>
+  </form>
+</body>
+</html>
